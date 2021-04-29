@@ -1,0 +1,28 @@
+{
+  "name": "@mediaventures/webrtc-streamer",
+  "version": "0.0.1",
+  "description": "mediAVentures webRTC streamer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "media",
+    "mediaventures",
+    "webrtc",
+    "streamer",
+    "streaming",
+    "mixer"
+  ],
+  "author": "ksinas",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1"
+  },
+  "dependencies": {
+    "@peermetrics/webrtc-stats": "^4.0.0",
+    "webrtc-adapter": "^7.7.1"
+  }
+}
