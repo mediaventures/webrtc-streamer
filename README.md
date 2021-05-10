@@ -142,24 +142,24 @@ const someMuted = main.muted || main.videoDisabled
 // detect changes, so we could display them in UI
 main.on('changed', handlePropsThatChanged);
 
-videoElement.srcOpbject = main.mediaStream;
+videoElement.srcObject = main.mediaStream;
 ```
 
 ### create receiver
 ```javascript
 const receiver = mediaService.createReceiver('streamId', { rtcConfig });
 await receiver.subscribe();
-videoElement.srcOpbject = receiver.mediaStream;
+videoElement.srcObject = receiver.mediaStream;
 
 // or wait for event
 receiver.on('changed', (props) => {
   if ('mediaStream' in props) {
-    videoElement.srcOpbject = props.mediaStream;
+    videoElement.srcObject = props.mediaStream;
   }
 });
 
 receiver.on('stream:available', (stream) => {
-  videoElement.srcOpbject = stream;
+  videoElement.srcObject = stream;
 });
 
 ```
